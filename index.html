@@ -5,14 +5,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GS Hacemos Radio</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>GS Hacemos Radio</title>
+
     <link rel="stylesheet" href="custom.css">
 </head>
 
 <body>
+
+    <!-- MENÚ ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="img/icons/gs-icon.png" alt="Logo de la empresa Grupo Shopping"></a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#nosotros" onclick="seleccionar()">NOSOTROS</a></li>
+                    <li><a href="#oyentes" onclick="seleccionar()">OYENTES</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- S E C C I Ó N  I N I C I O -->
+    <section id="inicio" class="inicio">
+        <div class="inicio-contenedor">
+            <div class="inicio-text">
+                <h1>GRUPO SHOPPING</h1>
+                <h2>HACEMOS RADIO</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium animi molestias maxime nesciunt
+                    illo inventore veritatis ipsum autem sapiente quod, rerum provident eveniet voluptatum magnam nemo.</p>
+                <div class="buttons">
+                    <a href="#" class="btn-a">Comerciales</a>
+                    <a href="#" class="btn-b">Programación</a>
+                </div>
+            </div>
+
+            <div class="inicio-img">
+                <img src="img/img-inicio.png" alt="img-inicio">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE NOSOTROS -->
+    <section id="nosotros">
+        <div class="nosotros">
+            <div class="titulo">
+                <span>NOSOTROS</span>
+                <h2>Ofrecemos solo lo mejor</h2>
+            </div>
+
+            <div class="nosotros-contenedor">
+                <div class="nosotros-box">
+                    <img src="img/n-1.png" alt="">
+                    <h3>Order</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit sunt fugit placeat quam at,
+                        dolore
+                        assumenda libero.</p>
+                </div>
+
+                <div class="nosotros-box">
+                    <img src="img/n-2.png" alt="">
+                    <h3>Order</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit sunt fugit placeat quam at,
+                        dolore
+                        assumenda libero.</p>
+                </div>
+
+                <div class="nosotros-box">
+                    <img src="img/n-3.png" alt="">
+                    <h3>Order</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit sunt fugit placeat quam at,
+                        dolore
+                        assumenda libero.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 

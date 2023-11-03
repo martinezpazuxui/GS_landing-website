@@ -157,7 +157,12 @@ section#inicio {
     width: 80%;
     font-size: var(--p-font);
     margin: 1rem 0 2rem;
-    line-height: 1.5;
+    line-height: 1.7;
+}
+
+.inicio-text p span {
+    font-weight: 700;
+    color: var(--complementary__light);
 }
 
 .inicio-text .buttons {
@@ -200,13 +205,13 @@ section#inicio {
 section#nosotros {
     max-width: 100%;
     background-color: var(--grey__0);
-    padding: 80px 0;
+    padding: 60px 0 0px;
 }
 
 div.nosotros {
     max-width: 1100px;
+    min-height: 70vh;
     margin: auto;
-    min-height: 90vh;
 }
 
 .titulo {
@@ -254,17 +259,10 @@ div.nosotros {
     line-height: 1.7;
 }
 
-
-
-
-
-
-
-
-
 /* S E C C I Ó N   R E S P O N S I V E */
 @media screen and (max-width:980px) {
 
+    /* H E A D E R */
     .contenedor-header header {
         padding: 16px;
     }
@@ -294,10 +292,7 @@ div.nosotros {
         padding: 10px 0;
     }
 
-
-
-
-
+    /* I N I C I O */
     .inicio-contenedor {
         display: flex;
         flex-wrap: wrap;
@@ -317,9 +312,14 @@ div.nosotros {
         text-align: center;
     }
 
+    .inicio-text h2 {
+        margin-bottom: 30px;
+    }
+
     .inicio-text p {
         width: 100%;
         line-height: 1.5;
+        margin-bottom: 50px;
     }
 
     .inicio-text .buttons {

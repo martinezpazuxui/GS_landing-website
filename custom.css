@@ -6,7 +6,7 @@
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;800&family=Poppins:ital,wght@0,600;1,600&family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;1,600&display=swap');
 
 /*
 
@@ -18,16 +18,22 @@ font-family: 'Quicksand', sans-serif;
 
 * {
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
 }
 
+html {
+    /* Me permite deslizarme cuando hago click en los links del menu */
+    scroll-behavior: smooth;
+
+}
+
 /* E S T I L O S */
 :root {
-    --primary: #cf0d0d;
+    --primary: #bf0000;
     --primary__dark: #550000;
     --primary__light: #ff6e6e;
     --complementary: #ffaa00;
@@ -35,8 +41,9 @@ font-family: 'Quicksand', sans-serif;
     --complementary__light: #ffe4af;
     --black__1: #0C0C0C;
     --white__1: #D9D9D9;
+    --grey__0: #0f0f0f;
     --grey__1: #282828;
-    --grey__2: #414141;
+    --grey__2: #2b2b2b;
     --grey__3: #616161;
     --grey__4: #848484;
     --big-font: 2.8rem;
@@ -56,9 +63,9 @@ body {
 
 /* M E N U  N A V B A R */
 .contenedor-header {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     backdrop-filter: blur(10px);
-    background-color: rgba(85, 0, 0, 0.5);
+    background-color: rgba(85, 0, 0, 0.65);
     position: fixed;
     width: 100%;
     top: 0;
@@ -82,7 +89,6 @@ body {
 
 .contenedor-header header nav ul li a {
     text-align: none;
-    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 14px;
     color: var(--white__1);
@@ -110,25 +116,18 @@ body {
 section#inicio {
     background: url(img/img-fondo.jpg);
     max-width: 100%;
+    max-height: 100%;
     padding: 80px 0 0px;
 }
 
 .inicio-contenedor {
     max-width: 1100px;
-    min-height: 90vh;
+    max-height: 90vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1.5rem;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
     margin: auto;
-}
-
-.inicio-img {
-    max-width: 100%;
-    width: 600px;
-    height: auto;
-    margin: 0;
 }
 
 .inicio-img img {
@@ -173,7 +172,7 @@ section#inicio {
     background: var(--primary);
     color: var(--white__1);
     border-radius: 5px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .btn-b {
@@ -182,7 +181,7 @@ section#inicio {
     background: var(--complementary__light);
     color: var(--black__1);
     border-radius: 5px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .btn-a:hover {
@@ -200,7 +199,7 @@ section#inicio {
 /* N O S O T R O S */
 section#nosotros {
     max-width: 100%;
-    background-color: var(--grey__1);
+    background-color: var(--grey__0);
     padding: 80px 0;
 }
 
@@ -215,7 +214,7 @@ div.nosotros {
 }
 
 .titulo span {
-    color: var(--primary__light);
+    color: var(--white__1);
     font-weight: 800;
     font-size: 0.7rem;
 }
@@ -231,7 +230,7 @@ div.nosotros {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
     grid-gap: 1.5rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .nosotros-box {
@@ -243,7 +242,17 @@ div.nosotros {
     width: 100px;
 }
 
+.nosotros-box h3 {
+    margin: 4px 0 10px;
+    color: var(--complementary__light);
+    font-size: 1.2rem;
+}
 
+.nosotros-box p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+}
 
 
 
@@ -283,5 +292,41 @@ div.nosotros {
     nav.responsive ul li {
         border-bottom: 1px solid var(--white__1);
         padding: 10px 0;
+    }
+
+
+
+
+
+    .inicio-contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        max-width: 90%;
+    }
+
+    .inicio-img img {
+        display: none;
+    }
+
+    .inicio-text {
+        width: 100%;
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    .inicio-text p {
+        width: 100%;
+        line-height: 1.5;
+    }
+
+    .inicio-text .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        gap: 20px;
     }
 }

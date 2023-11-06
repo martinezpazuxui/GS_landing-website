@@ -253,12 +253,14 @@ div.nosotros {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, auto));
   grid-gap: 1.5rem;
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 .nosotros-box {
+  background: var(--black__1);
+  border-radius: 20px;
   text-align: center;
-  padding: 20px 30px;
+  padding: 30px 30px 40px 30px;
 }
 
 .nosotros-box img {
@@ -273,6 +275,7 @@ div.nosotros {
 
 .nosotros-box p {
   font-family: "Poppins", sans-serif;
+  font-size: var(--p-font);
   font-weight: 300;
   line-height: 1.7;
 }
@@ -281,13 +284,19 @@ div.nosotros {
 section#radios {
   max-width: 100%;
   background-color: var(--grey__2);
-  padding: 60px 0 0px;
+  padding: 60px 0 40px;
 }
 
 div.radios {
   max-width: 1100px;
   min-height: 50vh;
   margin: auto;
+}
+
+div.radios p {
+  justify-content: center;
+  text-align: center;
+  padding: 56px 0px 20px 0px;
 }
 
 .titulo {
@@ -315,8 +324,20 @@ div.radios {
 }
 
 .radios-box {
+  background: var(--black__1);
+  border-radius: 20px;
   text-align: center;
-  padding: 20px 30px 120px 20px;
+  padding: 60px 30px 60px 30px;
+}
+
+.radios-box .btn-b {
+  margin-top: 20px;
+}
+
+.radios-box .btn-b:hover {
+  transform: scale(1.2);
+  transition: 0.4s;
+  background: var(--white__1);
 }
 
 .radios-box img {
@@ -325,7 +346,7 @@ div.radios {
 
 .radios-box h3 {
   margin: 4px 0 10px;
-  color: var(--complementary__light);
+  color: var(--white__1);
   font-size: 1.2rem;
 }
 
@@ -407,6 +428,10 @@ section#oyentes {
   gap: 20px;
   margin-bottom: 20px;
 }
+
+
+
+
 
 /* S E C C I Ó N   R E S P O N S I V E */
 @media screen and (max-width: 1920px) {
@@ -502,7 +527,7 @@ section#oyentes {
 
   .inicio-text {
     width: 100%;
-    padding: 200px 0;
+    padding: 100px 0;
     text-align: center;
   }
 
@@ -527,6 +552,13 @@ section#oyentes {
   .radios-icons {
     justify-content: center;
     margin: auto;
+    gap: 20px;
+  }
+
+  /* N O S O T R O S */
+  .nosotros-contenedor {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   /* O Y E N T E S */
@@ -545,7 +577,7 @@ section#oyentes {
 
   .oyentes-text {
     width: 100%;
-    padding: 200px 0;
+    padding: 100px 0;
     text-align: center;
   }
 
@@ -565,5 +597,10 @@ section#oyentes {
     justify-content: center;
     margin: auto;
     gap: 20px;
+  }
+
+  /* R A D I O S */
+  .titulo h2 {
+    font-size: 20px;
   }
 }
